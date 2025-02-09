@@ -1,0 +1,24 @@
+{
+  "name": "youtube-wl-playlist-filters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "publish": "npm run build && bestzip extension.zip manifest.json icons/* src/styles/* dist/*"
+  },
+  "author": "Thomas BARKATS",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/chrome": "^0.0.302",
+    "babel-loader": "^9.1.3",
+    "bestzip": "^2.2.1",
+    "typescript": "^5.7.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
